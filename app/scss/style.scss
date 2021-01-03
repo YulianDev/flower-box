@@ -3,6 +3,87 @@
 @import 'reset';
 @import 'global';
 
+.header {
+    &__top {
+        display: flex;
+        align-items: center;
+        padding: 15px 0 20px;
+    }
+    &__descr {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    &__top-right {
+        margin-left: 225px;
+        display: flex;
+        align-items: center;
+    }
+    &__text {
+        @extend %merriweather-300;
+        span {
+            @extend %merriweather-700;
+        }
+    }
+    &__phone {
+        margin: 0 40px;
+        font-size: 26px;
+        @extend %merriweather-700;
+        color: #004959;
+        span {
+            vertical-align: text-bottom;
+        }
+    }
+    &__calloffer {
+        color: #fd3068;
+        font-weight: 700;
+        padding: 10px 20px;
+        border: 2px solid #fd3068;
+        border-radius: 4px;
+        &:hover {
+            color: #fff;
+            background-color: #fd3068;
+        }
+    }
+    &__bag {
+        width: 54px;
+        height: 54px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #72beb4;
+        border-radius: 50%;
+        margin-left: 55px;
+        position: relative;
+        img {
+            width: 25px;
+            height: 25px;
+        }
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            background-color: #004a54;
+            color: #fff;
+            width: 20px;
+            height: 20px;
+            right: 0;
+            top: 0;
+            border-radius: 50%;
+        }
+    }
+    
+    
+}
+
+.logo {
+    &__img {
+        width: 240px;
+        height: 40px;
+    }
+    
+}
+
 
 
 
