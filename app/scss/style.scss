@@ -39,6 +39,7 @@
         padding: 10px 20px;
         border: 2px solid #fd3068;
         border-radius: 4px;
+        transition: all 0.7s;
         &:hover {
             color: #fff;
             background-color: #fd3068;
@@ -71,9 +72,34 @@
             top: 0;
             border-radius: 50%;
         }
+    }  
+}
+
+.menu {
+    padding: 6px 0;
+    background-color: #0f4a58;
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
-    
-    
+    &__list-item {
+        text-align: center;
+        line-height: 20px;
+    }
+    &__list-link {
+        display: block;
+        padding: 9px;
+        max-width: 160px;
+        color: #fff;
+        transition: all 0.7s;
+        border-radius: 10px;
+        @extend %merriweather-700;
+        &:hover {
+            background-color: #fff;
+            color: #0f4a58;
+        }
+    }
 }
 
 .logo {
@@ -83,6 +109,109 @@
     }
     
 }
+
+.footer {
+    padding: 80px 0 40px;
+    background-color: #2f4248;
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #b5c7cb;
+        padding-bottom: 55px;
+    }
+    &__nav,
+    &__payment,
+    &__contact {
+        width: 290px;
+    }
+    &__nav-item {
+        margin-bottom: 10px;
+    }
+    &__nav-link {
+        padding: 5px;
+        transition: all 0.7s;
+        &:hover {
+            color: #fff;
+        }
+    }
+    &__payment {
+        color: $link-color;
+    }
+    &__payment-title {
+        font-size: 14px;
+        @extend %merriweather-400;
+        margin-bottom: 10px;
+    }
+    &__payment-icons {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    &__payment-link + .footer__payment-link {
+        margin-left: 10px;
+    }
+    &__contact-phone, 
+    &__contact-address,
+    &__contact-call {
+        display: block;
+    }
+    &__contact-phone, 
+    &__contact-address {
+        font-size: 18px;
+        color: #fff;    
+    }
+    &__contact-phone {
+        span {
+            vertical-align: middle;
+        }
+        margin-bottom: 15px;
+    }
+    &__contact-call{
+        display: inline-block;
+        font-weight: 700;
+        margin-top: 25px;
+        padding: 12px 50px;
+        color: #0d4447;
+        background-color: #76bcb4;
+        border: 2px solid #76bcb4;
+            border-radius: 4px;
+        transition: all 0.7s;
+        &:hover{
+            color: #76bcb4;
+            background-color: transparent;
+        }
+    }
+    &__copy {
+        margin-top: 40px;
+        display: flex;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    &__copy-text {
+        color: #fff;
+        padding-right: 5px;
+        margin-right: 5px;
+        position: relative;
+        span {
+            font-size: 14px;
+            vertical-align: middle;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            border-right: 1px solid #fff;
+            right: 0;
+            top: 4px;
+            height: 17px;
+        }
+    }
+    &__policy:hover {
+        transition: all 0.7s;
+        color: #fff;
+    }
+}
+
+
 
 
 
