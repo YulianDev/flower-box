@@ -7,6 +7,13 @@ html{
   *::before{
     box-sizing: inherit;
   }
+
+  *:active, 
+  *:hover, 
+  *:focus {
+    outline: 0;
+    outline-offset: 0;
+  }
   
   ul[class],
   ol[class] {

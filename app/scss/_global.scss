@@ -21,3 +21,31 @@
   a {
     color: $link-color;
   }
+
+  .title,
+  .descr {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__text {
+      padding: 0 25px;
+    }
+    &__line {
+      height: 2px;
+      background-color: $default;
+      opacity: .3;
+      flex: 1;
+    }
+  }
+
+  .descr {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }

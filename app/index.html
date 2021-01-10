@@ -11,60 +11,656 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__top">
-                <div class="header__top-left">
-                    <a class="logo" href="#">
-                        <img class="logo__img" src="images/icons/logo.svg" alt="logo">
-                    </a>
-                    <div class="header__descr">
-                        Доставка цветов по всему Белгороду
+            <div class="header__inner">
+                <div class="header__top">
+                    <div class="header__top-left">
+                        <a class="logo" href="#">
+                            <img class="logo__img" src="images/icons/logo.svg" alt="logo">
+                        </a>
+                        <div class="header__descr">
+                            Доставка цветов по всему Белгороду
+                        </div>
                     </div>
-                </div>
-                <div class="header__top-right">
-                    <div class="header__schedule">
-                        <p class="header__text">31 декабря: <span>с 8 до 17:00</span></p>
-                        <p class="header__text">1 января: <span>выходной</span></p>
-                        <p class="header__text">c 2 по 10 января: <span>с 9 до 19:00</span></p>
+                    <div class="header__top-right">
+                        <div class="header__schedule">
+                            <p class="header__text">31 декабря: <span>с 8 до 17:00</span></p>
+                            <p class="header__text">1 января: <span>выходной</span></p>
+                            <p class="header__text">c 2 по 10 января: <span>с 9 до 19:00</span></p>
+                        </div>
+                        <a class="header__phone" href="tel:+74722322072"> <span>+</span>7 4722 32 20 72</a>
+                        <a class="header__calloffer" href="#">Заказать звонок</a>
+                        <a class="header__bag" href="#">
+                            <img src="images/icons/bag.svg" alt="shopping bag">
+                            <span>0</span>
+                        </a>
                     </div>
-                    <a class="header__phone" href="tel:+74722322072"> <span>+</span>7 4722 32 20 72</a>
-                    <a class="header__calloffer" href="#">Заказать звонок</a>
-                    <a class="header__bag" href="#">
-                        <img src="images/icons/bag.svg" alt="shopping bag">
-                        <span>0</span>
-                    </a>
                 </div>
             </div>
+            <nav class="menu">
+                <div class="container">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link">Букеты</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link">Цветы в коробках и корзинах</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link">Игрушки</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link">О нас</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link">Отзывы</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link">Доставка и оплата</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <nav class="menu">
-            <div class="container">
-                <ul class="menu__list">
-                    <li class="menu__list-item">
-                        <a href="#" class="menu__list-link">Букеты</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a href="#" class="menu__list-link">Цветы в коробках и корзинах</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a href="#" class="menu__list-link">Игрушки</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a href="#" class="menu__list-link">О нас</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a href="#" class="menu__list-link">Отзывы</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a href="#" class="menu__list-link">Доставка и оплата</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a href="#" class="menu__list-link">Контакты</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+
     </header>
 
     <main class="main">
+        <section class="selection product-box">
+            <div class="container">
+                <div class="product-box__header">
+                    <h2 class="title">
+                        <div class="title__line"></div>
+                        <span class="title__text">Подборка месяца
+                        </span>
+                        <div class="title__line"></div>
+                    </h2>
+                    <p class="descr">
+                        Не знаите какие цветы подарить? Взгляните на нашу подборку января!
+                    </p>
+                </div>
+                <div class="product-box__content">
+                    <div class="product-box__items ">
+                        <div class="product-item">
+                            <span class="product-item__discount">-6%</span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/25-rose.jpg"
+                                        alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">25 красных роз</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="4"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 1299 грн</p>
+                                    <p class="product-item__old-price"> 1299 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <span class="product-item__discount">-6%</span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/51-rose.jpg"
+                                        alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">51 красная роза</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="5"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 2499 грн</p>
+                                    <p class="product-item__old-price"> 2499 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <span class="product-item__discount">-6%</span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/101-rose.jpg"
+                                        alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">101 красная роза</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="4"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 4759 грн</p>
+                                    <p class="product-item__old-price"> 4759 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <span class="product-item__discount">-6%</span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/151-rose.jpg"
+                                        alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">151 красная роза</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="4"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 6999 грн</p>
+                                    <p class="product-item__old-price"> 6999 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="product-box__content-link" href="#">
+                        Показать ещё
+                    </a>
+                </div>
+        </section>
+        <section class="new-items product-box">
+            <div class="container">
+                <div class="product-box__header new-items__header">
+                    <h2 class="title">
+                        <div class="title__line"></div>
+                        <span class="title__text">Новинки</span>
+                        <div class="title__line"></div>
+                    </h2>
+                </div>
+                <div class="product-box__content">
+                    <div class="product-box__items ">
+                        <div class="product-item">
+                            <span class="product-item__discount">-6%</span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/new-1.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">Новогодняя корзина с фруктами</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="4"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 385 грн</p>
+                                    <p class="product-item__old-price"> 385 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <span class="product-item__discount">-6%</span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/new-2.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">Новогодняя композиция с фигуркой коровы</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="5"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 275 грн</p>
+                                    <p class="product-item__old-price"> 275 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <span class="product-item__discount">-6%</span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/new-3.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">Новогодняя композиция с фигуркой
+                                    снеговика</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="4"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 260 грн</p>
+                                    <p class="product-item__old-price"> 260 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <span class="product-item__discount">-6%</span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/new-4.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">Новогодняя композиция с фигуркой совы</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="4"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 260 грн</p>
+                                    <p class="product-item__old-price"> 260 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="product-box__content-link" href="#">
+                        Показать ещё
+                    </a>
+                </div>
+        </section>
+        <section class="special-offers product-box">
+            <div class="container">
+                <div class="product-box__header special-offers__header">
+                    <h2 class="title">
+                        <div class="title__line"></div>
+                        <span class="title__text">
+                            Специальные предложения</span>
+                        <div class="title__line"></div>
+                    </h2>
+                    <p class="descr">
+                        Закажите сейчас и сэкономьте! Ограниченные по времени скидки на цветы!
+                    </p>
+                </div>
+                <div class="product-box__content">
+                    <div class="product-box__items ">
+                        <div class="product-item product-item--discount">
+                            <span class="product-item__discount">-9%</span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/dis-1.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">Новогодняя корзина с фруктами</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="4"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 385 грн</p>
+                                    <p class="product-item__old-price"> 420 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item product-item--discount">
+                            <span class="product-item__discount">-12%</span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/dis-2.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">Новогодняя композиция с фигуркой коровы</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="5"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 275 грн</p>
+                                    <p class="product-item__old-price"> 308 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item product-item--discount">
+                            <span class="product-item__discount">-10%</span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/dis-3.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">Новогодняя композиция с фигуркой
+                                    снеговика</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="4"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 260 грн</p>
+                                    <p class="product-item__old-price"> 286 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item product-item--discount">
+                            <span class="product-item__discount">-25%</span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/dis-4.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">Новогодняя композиция с фигуркой совы</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="4"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 185 грн</p>
+                                    <p class="product-item__old-price"> 231 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="product-box__content-link" href="#">
+                        Показать ещё
+                    </a>
+                </div>
+        </section>
+
+
+
+        <section class="month-top product-box">
+            <div class="container">
+                <div class="product-box__header month-top__header">
+                    <h2 class="title">
+                        <div class="title__line"></div>
+                        <span class="title__text">
+                            Популярные товары</span>
+                        <div class="title__line"></div>
+                    </h2>
+                </div>
+                <div class="product-box__content">
+                    <div class="product-box__items ">
+                        <div class="product-item">
+                            <span class="product-item__discount"></span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/1.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">Новогодняя корзина с фруктами</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="4"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 385 грн</p>
+                                    <p class="product-item__old-price"> 420 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item product-item--discount">
+                            <span class="product-item__discount">-12%</span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/2.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">Новогодняя композиция с фигуркой коровы</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="5"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 275 грн</p>
+                                    <p class="product-item__old-price"> 308 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item product-item--discount">
+                            <span class="product-item__discount">-10%</span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/3.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">Новогодняя композиция с фигуркой
+                                    снеговика</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="4"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 260 грн</p>
+                                    <p class="product-item__old-price"> 286 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item product-item--discount">
+                            <span class="product-item__discount">-25%</span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/4.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">Новогодняя композиция с фигуркой совы</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="4"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 185 грн</p>
+                                    <p class="product-item__old-price"> 231 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <span class="product-item__discount"></span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/5.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">Новогодняя корзина с фруктами</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="4"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 385 грн</p>
+                                    <p class="product-item__old-price"> 420 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <span class="product-item__discount"></span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/6.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">Новогодняя корзина с фруктами</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="4"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 385 грн</p>
+                                    <p class="product-item__old-price"> 420 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <span class="product-item__discount"></span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/7.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">Новогодняя корзина с фруктами</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="4"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 385 грн</p>
+                                    <p class="product-item__old-price"> 420 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <span class="product-item__discount"></span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/8.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">Новогодняя корзина с фруктами</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="4"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 385 грн</p>
+                                    <p class="product-item__old-price"> 420 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <span class="product-item__discount"></span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/9.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">Новогодняя корзина с фруктами</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="4"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 385 грн</p>
+                                    <p class="product-item__old-price"> 420 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <span class="product-item__discount"></span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/10.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">Новогодняя корзина с фруктами</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="4"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 385 грн</p>
+                                    <p class="product-item__old-price"> 420 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <span class="product-item__discount"></span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/11.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">Новогодняя корзина с фруктами</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="4"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 385 грн</p>
+                                    <p class="product-item__old-price"> 420 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <span class="product-item__discount"></span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/12.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">Новогодняя корзина с фруктами</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="4"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 385 грн</p>
+                                    <p class="product-item__old-price"> 420 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="product-box__content-link" href="#">
+                        Показать ещё
+                    </a>
+                </div>
+        </section>
+
+
 
     </main>
 
