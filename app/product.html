@@ -12,7 +12,7 @@
     <header class="header">
         <div class="header__inner">
             <div class="container">
-              <div class="header__top">
+                <div class="header__top">
                     <div class="header__top-left">
                         <a class="logo" href="#">
                             <img class="logo__img" src="images/icons/logo.svg" alt="logo">
@@ -67,7 +67,7 @@
     </header>
 
     <main class="main">
-        <div class="product-page">
+        <section class="product-page">
             <div class="container">
                 <div class="product-card">
                     <div class="product-card__inner">
@@ -109,23 +109,475 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="product-card__title">
+                            <h3 class="product-card__title">
                                 Композиция-сумочка с розами, орхидеями и альстромерией
+                            </h3>
+                            <div class="product-card__order">
+                                <div class="product-card__price">
+                                    <p class="product-card__price-old">528</p>
+                                    <p class="product-card__price-current">485 <span
+                                            class="product-card__price-currency">грн</span></p>
+                                    <div class="star" data-rateyo-rating="4"></div>
+                                </div>
+                                <form class="product-card__form" action="#">
+                                    <input class="product-card__input" type="number" value="1" min="1">
+                                    <button class="product-card__btn" type="submit">Добавить в корзину</button>
+                                </form>
                             </div>
-                            <div class="star" data-rateyo-rating="5"></div>
-                            <div class="product-card__price">
-                                <p class="product-card__price-current">485 грн</p>
-                                <p class="product-card__price-old">528 грн</p>
+                            <div class="product-card__callback callback">
+                                <h5 class="callback__title">
+                                    Быстрый заказ
+                                    <span class="callback__icon">
+                                        <img src="images/icons/info.svg" alt="info icon">
+                                    </span>
+                                    <span class="callback__descr">
+                                        Оставьте заявку и наш менеджер оперативно свяжется с вами и уточнит все детали
+                                    </span>
+                                </h5>
+                                <div class="callback__form-box">
+                                    <p class="callback__text">Мы перезвоним вам для уточнения деталей заказа</p>
+                                    <form class="callback__form" action="#">
+                                        <div class="input-box"><input class="callback__input" type="text"
+                                                placeholder="Ваш номер телефона" required></div>
+                                        <label class="callback__label">
+                                            <input class="callback__checkbox" type="checkbox" required>
+                                            <p class="callback__agree">Я принимаю условия политики конфиденциальности <a
+                                                    class="callback__agree-link" href="#">(подробнее)</a></p>
+                                        </label>
+                                        <button class="callback__btn">Отправить</button>
+                                    </form>
+                                </div>
                             </div>
-                            <form class="product-card__form" action="#">
-                                <input class="product-card__input" type="number" value="1" min="1">
-                                <button class="product-card__btn" type="submit">Купить</button>
-                            </form>
+                            <div class="product-card__tabs product-tabs">
+                                <div class="product-tabs__top">
+                                    <a class="product-tabs__top-item product-tabs__top-item--active"
+                                        href="#tab1">Доставка и оплата</a>
+                                    <a class="product-tabs__top-item" href="#tab2">Характеристики</a>
+                                    <a class="product-tabs__top-item" href="#tab3">Описание</a>
+                                </div>
+                                <div class="product-tabs__content">
+                                    <div class="product-tabs__content-item product-tabs__content-item--active"
+                                        id="tab1">
+                                        <ul class="product-tabs__list">
+                                            <li class="product-tabs__list-item product-tabs__list-delivery">
+                                                <p class="product-tabs__charact">
+                                                    Самовывоз из шоу-рума
+                                                </p>
+                                                <p class="product-tabs__value product-tabs__value--free">
+                                                    Бесплатно
+                                                </p>
+                                            </li>
+                                            <li class="product-tabs__list-item product-tabs__list-delivery">
+                                                <p class="product-tabs__charact">
+                                                    Курьером — до 500 грн с 8:00 до 22:00
+                                                </p>
+                                                <p class="product-tabs__value">
+                                                    60 грн
+                                                </p>
+                                            </li>
+                                            <li class="product-tabs__list-item product-tabs__list-delivery">
+                                                <p class="product-tabs__charact">
+                                                    Курьером — от 500 грн
+                                                </p>
+                                                <p class="product-tabs__value product-tabs__value--free">
+                                                    Бесплатно
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="product-tabs__content-item" id="tab2">
+                                        <ul class="product-tabs__list">
+                                            <li class="product-tabs__list-item">
+                                                <p class="product-tabs__charact">
+                                                    Цвет
+                                                </p>
+                                                <p class="product-tabs__value">
+                                                    Белый, Красный, Пудровый, Зелёный
+                                                </p>
+                                            </li>
+                                            <li class="product-tabs__list-item">
+                                                <p class="product-tabs__charact">
+                                                    Событие
+                                                </p>
+                                                <p class="product-tabs__value">
+                                                    1 Сентября, 8 марта, Бабушке, Выпускной, Годовщина, День Рождения,
+                                                    День Святого Валентина, Дочке, Жене, Коллеге, Любимой, Маме,
+                                                    Подруге, Руководителю, Сестре, Учителю, Юбилей.
+                                                </p>
+                                            </li>
+                                            <li class="product-tabs__list-item">
+                                                <p class="product-tabs__charact">
+                                                    Цветы
+                                                </p>
+                                                <p class="product-tabs__value">
+                                                    Роза, Орхидея, Альстромерия
+                                                </p>
+                                            </li>
+                                            <li class="product-tabs__list-item">
+                                                <p class="product-tabs__charact">
+                                                    Кому
+                                                </p>
+                                                <p class="product-tabs__value">
+                                                    Бабушке, Дочке, Жене, Коллеге, Любимой, Маме, Подруге, Руководителю,
+                                                    Сестре.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="product-tabs__content-item" id="tab3">
+                                        <ul class="product-tabs__list">
+                                            <li class="product-tabs__list-item">
+                                                <p class="product-tabs__charact">
+                                                    Состав:
+                                                </p>
+                                                <p class="product-tabs__value">
+                                                    Роза(5 шт.), Орхидея(3 шт.), Альстромерия(5 шт.)
+                                                </p>
+                                            </li>
+                                            <li class="product-tabs__list-item">
+                                                <p class="product-tabs__charact">
+                                                    Внимание:
+                                                </p>
+                                                <p class="product-tabs__value">
+                                                    Фото отражает приблизительное оформление. Состав композиции может
+                                                    изменяться в связи с сезонностью цветов и их наличием в продаже, о
+                                                    чем вы будете заранее предупреждены, при этом флористы сохранят
+                                                    общую гамму, настроение и визуальное оформление.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card__social social">
+                                <p class="social__text"> Мы в социальных сетях:</p>
+                                <div class="social__items">
+                                    <a class="social__link" href="https://www.facebook.com/flowerbox.flowerbox.33"
+                                        target="blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="29pt" height="29pt"
+                                            viewBox="0 0 29 29" version="1.1">
+                                            <path fill="#3B4256"
+                                                d="M 28.546875 14.5 C 28.546875 6.742188 22.257812 0.453125 14.5 0.453125 C 6.742188 0.453125 0.453125 6.742188 0.453125 14.5 C 0.453125 21.511719 5.589844 27.324219 12.304688 28.375 L 12.304688 18.5625 L 8.738281 18.5625 L 8.738281 14.5 L 12.304688 14.5 L 12.304688 11.40625 C 12.304688 7.886719 14.402344 5.941406 17.609375 5.941406 C 19.148438 5.941406 20.753906 6.214844 20.753906 6.214844 L 20.753906 9.667969 L 18.984375 9.667969 C 17.238281 9.667969 16.695312 10.753906 16.695312 11.863281 L 16.695312 14.5 L 20.589844 14.5 L 19.96875 18.5625 L 16.695312 18.5625 L 16.695312 28.375 C 23.410156 27.324219 28.546875 21.511719 28.546875 14.5 Z M 28.546875 14.5 " />
+                                        </svg>
+                                    </a>
+                                    <a class="social__link"
+                                        href="https://www.instagram.com/flowerbox_kiliya/?igshid=ybj9il9nxj9r"
+                                        target="blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="25pt" height="28pt"
+                                            viewBox="0 0 25 28" version="1.1">
+                                            <path fill="#3B4256"
+                                                d="M 12.503906 7.710938 C 8.957031 7.710938 6.09375 10.515625 6.09375 13.996094 C 6.09375 17.472656 8.957031 20.277344 12.503906 20.277344 C 16.054688 20.277344 18.917969 17.472656 18.917969 13.996094 C 18.917969 10.515625 16.054688 7.710938 12.503906 7.710938 Z M 12.503906 18.078125 C 10.210938 18.078125 8.335938 16.246094 8.335938 13.996094 C 8.335938 11.742188 10.207031 9.910156 12.503906 9.910156 C 14.804688 9.910156 16.675781 11.742188 16.675781 13.996094 C 16.675781 16.246094 14.800781 18.078125 12.503906 18.078125 Z M 20.675781 7.453125 C 20.675781 8.269531 20.003906 8.917969 19.179688 8.917969 C 18.347656 8.917969 17.683594 8.261719 17.683594 7.453125 C 17.683594 6.644531 18.355469 5.988281 19.179688 5.988281 C 20.003906 5.988281 20.675781 6.644531 20.675781 7.453125 Z M 24.921875 8.941406 C 24.828125 6.976562 24.371094 5.238281 22.902344 3.804688 C 21.441406 2.375 19.664062 1.925781 17.660156 1.828125 C 15.597656 1.710938 9.410156 1.710938 7.34375 1.828125 C 5.347656 1.917969 3.570312 2.367188 2.105469 3.800781 C 0.636719 5.234375 0.183594 6.972656 0.0820312 8.9375 C -0.0351562 10.960938 -0.0351562 17.023438 0.0820312 19.046875 C 0.179688 21.011719 0.636719 22.75 2.105469 24.183594 C 3.570312 25.617188 5.339844 26.0625 7.34375 26.164062 C 9.410156 26.277344 15.597656 26.277344 17.660156 26.164062 C 19.664062 26.070312 21.441406 25.621094 22.902344 24.183594 C 24.363281 22.75 24.820312 21.011719 24.921875 19.046875 C 25.039062 17.023438 25.039062 10.964844 24.921875 8.941406 Z M 22.253906 21.21875 C 21.820312 22.289062 20.976562 23.117188 19.878906 23.546875 C 18.230469 24.1875 14.324219 24.039062 12.503906 24.039062 C 10.6875 24.039062 6.773438 24.183594 5.132812 23.546875 C 4.039062 23.121094 3.199219 22.296875 2.757812 21.21875 C 2.105469 19.605469 2.253906 15.777344 2.253906 13.996094 C 2.253906 12.210938 2.109375 8.378906 2.757812 6.769531 C 3.191406 5.699219 4.035156 4.871094 5.132812 4.441406 C 6.78125 3.800781 10.6875 3.949219 12.503906 3.949219 C 14.324219 3.949219 18.238281 3.804688 19.878906 4.441406 C 20.972656 4.867188 21.8125 5.691406 22.253906 6.769531 C 22.90625 8.382812 22.757812 12.210938 22.757812 13.996094 C 22.757812 15.777344 22.90625 19.609375 22.253906 21.21875 Z M 22.253906 21.21875 " />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="product-comments">
+            <div class="container">
+                <div class="product-comments__inner">
+                    <div class="comments">
+                        <div class="comments__inner">
+                            <div class="comments__side">
+                                <h4 class="comments__side-title">
+                                    Отзывы (<span class="comments__count">4</span>)
+                                </h4>
+                            </div>
+                            <div class="comments__box">
+                                <h4 class="comments__title">
+                                    <span class="comments__count">4</span> отзыва на <span
+                                        class="comments__position">Композиция-сумочка с розами, орхидеями и
+                                        альстромерией</span>
+                                </h4>
+                                <div class="comments__content">
+                                    <div class="comments__content-item">
+                                        <div class="star" data-rateyo-rating="3"></div>
+                                        <div class="comments__content-top">
+                                            <p class="comments__content-name">Катя</p>
+                                            <p class="comments__content-date">02 января 2021</p>
+                                        </div>
+                                        <p class="comments__content-text">Красивая композиция. Все как я люблю.</p>
+                                    </div>
+                                    <div class="comments__content-item">
+                                        <div class="star" data-rateyo-rating="5"></div>
+                                        <div class="comments__content-top">
+                                            <p class="comments__content-name">Катя</p>
+                                            <p class="comments__content-date">05 января 2021</p>
+                                        </div>
+                                        <p class="comments__content-text">Красивая композиция. Все как я люблю.</p>
+                                    </div>
+                                    <div class="comments__content-item">
+                                        <div class="star" data-rateyo-rating="5"></div>
+                                        <div class="comments__content-top">
+                                            <p class="comments__content-name">Катя</p>
+                                            <p class="comments__content-date">06 января 2021</p>
+                                        </div>
+                                        <p class="comments__content-text">Красивая композиция. Все как я люблю.</p>
+                                    </div>
+                                    <div class="comments__content-item">
+                                        <div class="star" data-rateyo-rating="4"></div>
+                                        <div class="comments__content-top">
+                                            <p class="comments__content-name">Катя</p>
+                                            <p class="comments__content-date">12 января 2021</p>
+                                        </div>
+                                        <p class="comments__content-text">Красивая композиция. Все как я люблю.</p>
+                                    </div>
+                                </div>
+                                <form class="comments__form reply-form" action="#">
+                                    <h4 class="reply-form__title">Добавить отзыв</h4>
+                                    <div class="reply-form__rate">
+                                        <p class="reply-form__text">Ваша оценка</p>
+                                        <div class="reply-form__radio-box">
+                                            <label class="reply-form__label-radio">
+                                                <input class="reply-form__input-radio" type="radio" name="rate">
+                                                <span class="reply-form__radio">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="14pt"
+                                                        height="12pt" viewBox="0 0 18 16" version="1.1">
+                                                        <path fill="#d6d6d6"
+                                                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                                                    </svg>
+                                                </span>
+                                            </label>
+                                            <label class="reply-form__label-radio">
+                                                <input class="reply-form__input-radio" type="radio" name="rate">
+                                                <span class="reply-form__radio">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="14pt"
+                                                        height="12pt" viewBox="0 0 18 16" version="1.1">
+                                                        <path fill="#d6d6d6"
+                                                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="14pt"
+                                                        height="12pt" viewBox="0 0 18 16" version="1.1">
+                                                        <path fill="#d6d6d6"
+                                                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                                                    </svg>
+                                                </span>
+                                            </label>
+                                            <label class="reply-form__label-radio">
+                                                <input class="reply-form__input-radio" type="radio" name="rate">
+                                                <span class="reply-form__radio">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="14pt"
+                                                        height="12pt" viewBox="0 0 18 16" version="1.1">
+                                                        <path fill="#d6d6d6"
+                                                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="14pt"
+                                                        height="12pt" viewBox="0 0 18 16" version="1.1">
+                                                        <path fill="#d6d6d6"
+                                                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="14pt"
+                                                        height="12pt" viewBox="0 0 18 16" version="1.1">
+                                                        <path fill="#d6d6d6"
+                                                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                                                    </svg>
+                                                </span>
+                                            </label>
+                                            <label class="reply-form__label-radio">
+                                                <input class="reply-form__input-radio" type="radio" name="rate">
+                                                <span class="reply-form__radio">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="14pt"
+                                                        height="12pt" viewBox="0 0 18 16" version="1.1">
+                                                        <path fill="#d6d6d6"
+                                                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="14pt"
+                                                        height="12pt" viewBox="0 0 18 16" version="1.1">
+                                                        <path fill="#d6d6d6"
+                                                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="14pt"
+                                                        height="12pt" viewBox="0 0 18 16" version="1.1">
+                                                        <path fill="#d6d6d6"
+                                                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="14pt"
+                                                        height="12pt" viewBox="0 0 18 16" version="1.1">
+                                                        <path fill="#d6d6d6"
+                                                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                                                    </svg>
+                                                </span>
+                                            </label>
+                                            <label class="reply-form__label-radio">
+                                                <input class="reply-form__input-radio" type="radio" name="rate">
+                                                <span class="reply-form__radio">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="14pt"
+                                                        height="12pt" viewBox="0 0 18 16" version="1.1">
+                                                        <path fill="#d6d6d6"
+                                                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="14pt"
+                                                        height="12pt" viewBox="0 0 18 16" version="1.1">
+                                                        <path fill="#d6d6d6"
+                                                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="14pt"
+                                                        height="12pt" viewBox="0 0 18 16" version="1.1">
+                                                        <path fill="#d6d6d6"
+                                                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="14pt"
+                                                        height="12pt" viewBox="0 0 18 16" version="1.1">
+                                                        <path fill="#d6d6d6"
+                                                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="14pt"
+                                                        height="12pt" viewBox="0 0 18 16" version="1.1">
+                                                        <path fill="#d6d6d6"
+                                                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                                                    </svg>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <label class="reply-form__label">
+                                        <p class="reply-form__text">Ваш отзыв <span class="required">*</span></p>
+                                        <textarea class="reply-form__text-area" placeholder="Введите комментарий"
+                                            required></textarea>
+                                    </label>
+                                    <div class="reply-form__contact">
+                                        <label class="reply-form__label">
+                                            <p class="reply-form__text"> Имя <span class="required">*</span>
+                                            </p>
+                                            <input class="reply-form__name" type="text" placeholder="Введите ваше имя"
+                                                required>
+                                        </label>
+                                        <label class="reply-form__label">
+                                            <p class="reply-form__text">
+                                                Email <span class="required">*</span>
+                                            </p>
+                                            <input class="reply-form__email" type="text" placeholder="Введите ваш email"
+                                                required>
+                                        </label>
+                                    </div>
+                                    <button class="reply-form__btn">Отправить</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="similar-goods">
+            <div class="container">
+                <div class="similar-goods__inner">
+                    <h4 class="similar-goods__title">Похожие товары</h4>
+                    <div class="product-box__items ">
+                        <div class="product-item">
+                            <span class="product-item__discount">-6%</span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/25-rose.jpg"
+                                        alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">25 красных роз</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="4"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 1299 грн</p>
+                                    <p class="product-item__old-price"> 1299 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <span class="product-item__discount">-6%</span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/51-rose.jpg"
+                                        alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">51 красная роза</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="5"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 2499 грн</p>
+                                    <p class="product-item__old-price"> 2499 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <span class="product-item__discount">-6%</span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/101-rose.jpg"
+                                        alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">101 красная роза</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="4"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 4759 грн</p>
+                                    <p class="product-item__old-price"> 4759 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <span class="product-item__discount">-6%</span>
+                            <div class="product-item__img-box">
+                                <a href="#" class="product-item__img-link">
+                                    <img class="product-item__img" src="images/products/151-rose.jpg"
+                                        alt="product image">
+                                </a>
+                            </div>
+                            <h4 class="product-item__title">
+                                <a class="product-item__title-link" href="#">151 красная роза</a>
+                            </h4>
+                            <div class="product-item__star star" data-rateyo-rating="4"></div>
+                            <div class="product-item__order">
+                                <div class="product-item__price">
+                                    <p class="product-item__current-price"> 6999 грн</p>
+                                    <p class="product-item__old-price"> 6999 грн</p>
+                                </div>
+                                <a class="product-item__link" href="#">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="footer">
