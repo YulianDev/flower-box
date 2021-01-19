@@ -67,7 +67,48 @@
     </header>
 
     <main class="main">
-
+        <sectio class="flowers-list product-list">
+            <div class="container">
+                <div class="product-list__inner">
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="#" class="breadcrumbs__link">Доставка цветов</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="#" class="breadcrumbs__link">Букеты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="title product-list__title">Букеты</div>
+                </div>
+            </div>
+            <div class="product-list__filter filter">
+                <div class="container">
+                    <div class="filter__inner">
+                        <div class="filter-price filter__item">
+                            <h4 class="filter__title">
+                                Стоимость
+                            </h4>
+                            <form class="filter-price__form" action="#">
+                                <input class="filter-price__input" type="text"
+                                data-min="0"
+                                data-max="10000"
+                                data-from="1000"
+                                data-to="5000"
+                                data-step="1"
+                                >
+                                <label class="filter-price__label">
+                                        <span class="filter-price__from"></span> -
+                                        <span class="filter-price__to"></span> 
+                                        <span class="filter-price__currency">грн</span>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </sectio>
     </main>
 
     <footer class="footer">
