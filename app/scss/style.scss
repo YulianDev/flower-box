@@ -304,6 +304,8 @@
             content: '';
             position: absolute;
             background-image: url('../images/icons/star.svg');
+            background-repeat: no-repeat;
+            background-position: center;
             top: 0;
             left: 0;
             width: 10px;
@@ -812,10 +814,18 @@
     &__title {
         margin-bottom: 10px;
     }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        max-width: 250px;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .filter-price {
-    max-width: 250px;
     &__label {
         display: flex;
         justify-content: space-evenly;
@@ -824,8 +834,50 @@
     &__to {
         width: 60px;
         border-radius: 10px;
+        background-color: #fff;
         border: 1px solid $default;
         text-align: center;
+    }
+}
+
+.filter-color {
+    &__input {
+        @extend %checkbox-hidden;
+        &:checked + .filter-color__checkbox {
+            background-image: url('../images/icons/check.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 1px solid #333333;
+            opacity: 1;
+        }
+    }
+    &__label {
+        cursor: pointer;
+    }
+    &__label + .filter-color__label {
+        margin-left: 40px;
+    }
+    &__checkbox {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        border: 1px solid #f9f9f9;
+        opacity: .8;
+    }
+    &__checkbox--peach {
+        background-color: #ffebc7;
+    }
+    &__checkbox--white {
+        background-color: #fff;
+    }
+    &__checkbox--red {
+        background-color: #f00;
+    }
+    &__checkbox--orange {
+        background-color: #ff7f50;
+    }
+    &__checkbox--pink {
+        background-color: #ff1e6d;
     }
 }
 
@@ -1055,6 +1107,59 @@
     top: 0;
     height: 8px;
 }
+
+.jq-selectbox, .jq-selectbox__dropdown {
+    width: 200px;
+    background-color: #f9f9f9;
+}
+.jq-selectbox__dropdown {
+    left: -1px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.jq-selectbox__dropdown ul {
+    height: 200px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.jq-selectbox__select-text {
+    padding: 5px 25px 5px 10px;
+    text-align: center;
+    text-decoration: underline;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        background-image: url('../images/icons/select-triangle.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 9px;
+        height: 12px;
+        top: 13px;
+        right: 10px;
+        transform: rotate(180deg)
+    }
+}
+
+.opened {
+    .jq-selectbox__select-text::after {
+        transform: rotate(0);
+        top: 10px;
+    }
+}
+
+.jq-selectbox li {
+    padding: 5px 10px;
+    white-space: normal;
+    &:hover {
+        background-color: $accent;
+        cursor: pointer;
+    }
+}
+
 
 
 

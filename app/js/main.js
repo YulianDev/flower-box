@@ -28,7 +28,7 @@ $(function(){
         $($(this).attr('href')).addClass('product-tabs__content-item--active');
     })
 
-    $('.product-card__input').styler();
+    $('.product-card__input, .filter__select').styler();
 
     $('.product-slide__thumb').slick({
         asNavFor: '.product-slide__big',

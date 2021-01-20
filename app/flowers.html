@@ -88,20 +88,148 @@
                     <div class="filter__inner">
                         <div class="filter-price filter__item">
                             <h4 class="filter__title">
-                                Стоимость
+                                Стоимость:
                             </h4>
                             <form class="filter-price__form" action="#">
-                                <input class="filter-price__input" type="text"
-                                data-min="0"
-                                data-max="10000"
-                                data-from="1000"
-                                data-to="5000"
-                                data-step="1"
-                                >
+                                <input class="filter-price__input" type="text" data-min="0" data-max="10000"
+                                    data-from="1000" data-to="5000" data-step="1">
                                 <label class="filter-price__label">
-                                        <span class="filter-price__from"></span> -
-                                        <span class="filter-price__to"></span> 
-                                        <span class="filter-price__currency">грн</span>
+                                    <span class="filter-price__from"></span> -
+                                    <span class="filter-price__to"></span>
+                                    <span class="filter-price__currency">грн</span>
+                                </label>
+                            </form>
+                        </div>
+                        <div class="filter-gamma filter__item">
+                            <h4 class="filter__title">Гамма цветов:</h4>
+                            <form class="filter-gamma__form">
+                                <select class="filter__select">
+                                    <option class="filter__option" selected>
+                                        Выберите из списка
+                                    </option>
+                                    <option class="filter__option">
+                                        Белый (<span class="filter__option-count">8</span>)
+                                    </option>
+                                    <option class="filter__option">
+                                        Голубой (<span class="filter__option-count">1</span>)
+                                    </option>
+                                    <option class="filter__option">
+                                        Желтый (<span class="filter__option-count">4</span>)
+                                    </option>
+                                    <option class="filter__option">
+                                        Зеленый (<span class="filter__option-count">6</span>)
+                                    </option>
+                                    <option class="filter__option">
+                                        Красный (<span class="filter__option-count">6</span>)
+                                    </option>
+                                    <option class="filter__option">
+                                        Лиловый (<span class="filter__option-count">1</span>)
+                                    </option>
+                                    <option class="filter__option">
+                                        Оранжевый (<span class="filter__option-count">3</span>)
+                                    </option>
+                                    <option class="filter__option">
+                                        Розовый (<span class="filter__option-count">7</span>)
+                                    </option>
+                                    <option class="filter__option">
+                                        Фиолетовый (<span class="filter__option-count">1</span>)
+                                    </option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="filter-category filter__item">
+                            <h4 class="filter__title">Категории:</h4>
+                            <form class="filter-category__form">
+                                <select class="filter__select">
+                                    <option class="filter__option" selected>
+                                        Выберите из списка
+                                    </option>
+                                    <option class="filter__option">
+                                        Цветы маме (<span class="filter__option-count">28</span>)
+                                    </option>
+                                    <option class="filter__option">
+                                        День учителя (<span class="filter__option-count">2</span>)
+                                    </option>
+                                    <option class="filter__option">
+                                        8 марта (<span class="filter__option-count">4</span>)
+                                    </option>
+                                    <option class="filter__option">
+                                        День семьи, любви и верности (<span class="filter__option-count">12</span>)
+                                    </option>
+                                    <option class="filter__option">
+                                        Новинки (<span class="filter__option-count">3</span>)
+                                    </option>
+                                    <option class="filter__option">
+                                        Цветы и букеты (<span class="filter__option-count">3</span>)
+                                    </option>
+                                    <option class="filter__option">
+                                        Композиции (<span class="filter__option-count">67</span>)
+                                    </option>
+                                    <option class="filter__option">
+                                        Вкусные букеты (<span class="filter__option-count">5</span>)
+                                    </option>
+                                    <option class="filter__option">
+                                        Цветочные ящики (<span class="filter__option-count">26</span>)
+                                    </option>
+                                    <option class="filter__option">
+                                        Цветочные сюрпризы (<span class="filter__option-count">4</span>)
+                                    </option>
+                                    <option class="filter__option">
+                                        Герберы (<span class="filter__option-count">1</span>)
+                                    </option>
+                                    <option class="filter__option">
+                                        Тюльпаны (<span class="filter__option-count">1</span>)
+                                    </option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="filter-size filter__item">
+                            <h4 class="filter__title">Размер:</h4>
+                            <form class="filter-category__form">
+                                <select class="filter__select">
+                                    <option class="filter__option" selected>
+                                        Выберите из списка
+                                    </option>
+                                    <option class="filter__option">
+                                        L (<span class="filter__option-count">28</span>)
+                                    </option>
+                                    <option class="filter__option">
+                                        M (<span class="filter__option-count">2</span>)
+                                    </option>
+                                    <option class="filter__option">
+                                        S (<span class="filter__option-count">4</span>)
+                                    </option>
+                                    <option class="filter__option">
+                                        XL (<span class="filter__option-count">12</span>)
+                                    </option>
+                                    <option class="filter__option">
+                                        XXL (<span class="filter__option-count">3</span>)
+                                    </option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="filter-color filter__item">
+                            <h4 class="filter__title">Цвет:</h4>
+                            <form class="filter-color__form">
+                                <label class="filter-color__label">
+                                    <input class="filter-color__input" type="radio" name="color">
+                                    <span class="filter-color__checkbox filter-color__checkbox--peach"></span>
+                                </label>
+                                <label class="filter-color__label">
+                                    <input class="filter-color__input" type="radio" name="color">
+                                    <span class="filter-color__checkbox filter-color__checkbox--white"></span>
+                                </label>
+                                <label class="filter-color__label">
+                                    <input class="filter-color__input" type="radio" name="color">
+                                    <span class="filter-color__checkbox filter-color__checkbox--red"></span>
+                                </label>
+                                <label class="filter-color__label">
+                                    <input class="filter-color__input" type="radio" name="color">
+                                    <span class="filter-color__checkbox filter-color__checkbox--orange"></span>
+                                </label>
+                                <label class="filter-color__label">
+                                    <input class="filter-color__input" type="radio" name="color">
+                                    <span class="filter-color__checkbox filter-color__checkbox--pink"></span>
                                 </label>
                             </form>
                         </div>
