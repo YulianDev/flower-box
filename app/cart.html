@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="container">
+                <div class="header__top">
+                    <div class="header__top-left">
+                        <a class="logo" href="#">
+                            <img class="logo__img" src="images/icons/logo.svg" alt="logo">
+                        </a>
+                        <div class="header__descr">
+                            Доставка цветов по всему Белгороду
+                        </div>
+                    </div>
+                    <div class="header__top-right">
+                        <div class="header__schedule">
+                            <p class="header__text">31 декабря: <span>с 8 до 17:00</span></p>
+                            <p class="header__text">1 января: <span>выходной</span></p>
+                            <p class="header__text">c 2 по 10 января: <span>с 9 до 19:00</span></p>
+                        </div>
+                        <a class="header__phone" href="tel:+74722322072"> <span>+</span>7 4722 32 20 72</a>
+                        <a class="header__calloffer" href="#">Заказать звонок</a>
+                        <a class="header__bag" href="#">
+                            <img src="images/icons/bag.svg" alt="shopping bag">
+                            <span>0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="menu">
+            <div class="container">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Букеты</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Цветы в коробках и корзинах</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Игрушки</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">О нас</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Отзывы</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Доставка и оплата</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="top">
+            <div class="container">
+                <div class="top__inner">
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="#" class="breadcrumbs__link">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="#" class="breadcrumbs__link">Корзина</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h2 class="title top__title">Корзина</h2>
+                </div>
+            </div>
+        </section>
+        <section class="cart">
+            <div class="container">
+                <div class="cart__inner">
+                    <form class="cart__form">
+                        <table class="cart__table table">
+                            <thead class="table__header">
+                                <tr class="table__row">
+                                    <th class="table__head-cell table__cell table__cell-img">
+                                        Фото товара
+                                    </th>
+                                    <th class="table__head-cell table__cell table__cell-name">
+                                        Товар
+                                    </th>
+                                    <th class="table__head-cell table__cell">
+                                        Цена, шт.
+                                    </th>
+                                    <th class="table__head-cell table__cell">
+                                        Количество
+                                    </th>
+                                    <th class="table__head-cell table__cell">
+                                        Сумма
+                                    </th>
+                                    <th class="table__head-cell table__cell">
+                                        Удалить
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="table__body">
+                                <tr class="table__row">
+                                    <td class="table__cell table__cell-img">
+                                        <img class="table__img" src="" alt="Товар">
+                                    </td>
+                                    <td class="table__cell table__cell-name">
+                                        <p class="table__name">
+                                            
+                                        </p>
+                                        <p class="table__artic">
+                                            Артикул: <span class="table__artic-numb"></span>
+                                        </p>
+                                    </td>
+                                    <td class="table__cell">
+                                        <p class="table__price">
+                                            <span class="table__price-num"></span> грн
+                                        </p>
+                                    </td>
+                                    <td class="table__cell">
+                                        <input class="table__input count-input"  type="number"value="1" min="1">
+                                    </td>
+                                    <td class="table__cell">
+                                        <p class="table__sum">
+                                            <span class="table__sum-num"></span> грн
+                                        </p>
+                                    </td>
+                                    <td class="table__cell">
+                                        <span class="table__delete">
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell table__cell-img">
+                                        <img class="table__img" src="images/products/14.jpg" alt="Товар">
+                                    </td>
+                                    <td class="table__cell table__cell-name">
+                                        <p class="table__name">
+                                            Лизиантус бело-розовый
+                                        </p>
+                                        <p class="table__artic">
+                                            Артикул: <span class="table__artic-numb">50802564</span>
+                                        </p>
+                                    </td>
+                                    <td class="table__cell">
+                                        <p class="table__price">
+                                            <span class="table__price-num">10000</span> грн
+                                        </p>
+                                    </td>
+                                    <td class="table__cell">
+                                        <input class="table__input count-input"  type="number"value="1" min="1">
+                                    </td>
+                                    <td class="table__cell">
+                                        <p class="table__sum">
+                                            <span class="table__sum-num">1111</span> грн
+                                        </p>
+                                    </td>
+                                    <td class="table__cell">
+                                        <span class="table__delete">
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="cart__total">
+                            <p class="cart__total-price">
+                                Сумма заказа: <span class="cart__total-num">1250505</span> <span class="cart__total-currency">грн</span>
+                            </p>
+                            <a class="cart__total-link" href="#">Оформить заказ</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__info">
+                <div class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">
+                                Оформление заказа
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">
+                                Доставка и оплата
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">
+                                Возврат товара
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">
+                                Новости и акции
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">
+                                Букеты
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">
+                                Композиции в корзинах
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">
+                                Игрушки
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">
+                                Букет невесты
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">
+                                Карта сайта
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__payment">
+                    <h6 class="footer__payment-title">Способы оплаты</h6>
+                    <div class="footer__payment-icons">
+                        <a class="footer__payment-link" href="#">
+                            <img class="footer__payment-img" src="images/icons/mastercart.svg" alt="payment icon">
+                        </a>
+                        <a class="footer__payment-link" href="#">
+                            <img class="footer__payment-img" src="images/icons/visa.svg" alt="payment icon">
+                        </a>
+                    </div>
+                    <p class="footer__payment-text">
+                        Оплата происходит через ПАО СБЕРБАНК с использованием Банковских карт следующих платежных
+                        систем.
+                    </p>
+                </div>
+                <div class="footer__contact">
+                    <a class="footer__contact-phone" href="tel:+74722322072">
+                        <span>+</span>7 4722 32 20 72
+                    </a>
+                    <a class="footer__contact-address" href="#">
+                        г. Белгород, Проспект Славы, 86
+                    </a>
+                    <a class="footer__contact-call" href="#">Заказать звонок</a>
+                </div>
+            </div>
+            <div class="footer__copy">
+                <p class="footer__copy-text"> <span>©</span> Flora Belle 2017 - 2021</p>
+                <a class="footer__policy" href="#">Политика конфиденциальности</a>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/main.min.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+
+</html>

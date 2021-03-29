@@ -12,20 +12,25 @@
     <header class="header">
         <div class="header__inner">
             <div class="container">
-              <div class="header__top">
+                <div class="header__top">
                     <div class="header__top-left">
                         <a class="logo" href="#">
-                            <img class="logo__img" src="images/icons/logo.svg" alt="logo">
+                            <img class="logo__img" src="images/icons/logo.jpg" alt="logo">
                         </a>
                         <div class="header__descr">
-                            Доставка цветов по всему Белгороду
+                            Доставка цветов по Килие
                         </div>
                     </div>
                     <div class="header__top-right">
                         <div class="header__schedule">
-                            <p class="header__text">31 декабря: <span>с 8 до 17:00</span></p>
-                            <p class="header__text">1 января: <span>выходной</span></p>
-                            <p class="header__text">c 2 по 10 января: <span>с 9 до 19:00</span></p>
+                            <p class="header__text">
+                                С понедельника по пятницу:
+                                <span>9:00 до 20:00</span>
+                            </p>
+                            <p class="header__text">
+                                Суббота и воскресенье:
+                                <span>10:00 до 18:00</span>
+                            </p>
                         </div>
                         <a class="header__phone" href="tel:+74722322072"> <span>+</span>7 4722 32 20 72</a>
                         <a class="header__calloffer" href="#">Заказать звонок</a>
@@ -41,25 +46,25 @@
             <div class="container">
                 <ul class="menu__list">
                     <li class="menu__list-item">
-                        <a href="#" class="menu__list-link">Букеты</a>
+                        <a class="menu__list-link" href="#">Букеты</a>
                     </li>
                     <li class="menu__list-item">
-                        <a href="#" class="menu__list-link">Цветы в коробках и корзинах</a>
+                        <a class="menu__list-link" href="#">Цветы в коробках и корзинах</a>
                     </li>
                     <li class="menu__list-item">
-                        <a href="#" class="menu__list-link">Игрушки</a>
+                        <a class="menu__list-link" href="#">Игрушки</a>
                     </li>
                     <li class="menu__list-item">
-                        <a href="#" class="menu__list-link">О нас</a>
+                        <a class="menu__list-link" href="#">О нас</a>
                     </li>
                     <li class="menu__list-item">
-                        <a href="#" class="menu__list-link">Отзывы</a>
+                        <a class="menu__list-link" href="#">Отзывы</a>
                     </li>
                     <li class="menu__list-item">
-                        <a href="#" class="menu__list-link">Доставка и оплата</a>
+                        <a class="menu__list-link" href="#">Доставка и оплата</a>
                     </li>
                     <li class="menu__list-item">
-                        <a href="#" class="menu__list-link">Контакты</a>
+                        <a class="menu__list-link" href="#">Контакты</a>
                     </li>
                 </ul>
             </div>
@@ -767,8 +772,125 @@
         </div>
     </footer>
 
+    <div class="chat">
+        <div class="chat__close-btn"></div>
+        <div class="chat__header">
+            <p class="chat__title">Отправьте нам сообщение</p>
+        </div>
+        <div class="chat__content">
+            <div class="chat__messages">
+                <div class="chat__message chat__message--server">
+                    Здравствуйте.
+                    У вас возникли вопросы? Мы с удовольствием ответим!
+                </div>
+                <div class="chat__message chat__message--client">
+                    Добрый день! Меня интересует цена роз.
+                </div>
+            </div>
+        </div>
+        <div class="chat__input">
+            <form class="chat__form">
+                <textarea class="chat__textarea" type="text" placeholder="Введите сообщение"></textarea>
+                <button class="chat__btn" type="submit">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 485.725 485.725"
+                        style="enable-background:new 0 0 485.725 485.725;" xml:space="preserve" fill="#3B4256">
+                        <path d="M459.835,196.758L73.531,9.826C48.085-2.507,17.46,8.123,5.126,33.569c-6.289,12.975-6.815,28-1.449,41.384
+			l60.348,150.818h421.7C481.285,213.048,471.972,202.611,459.835,196.758z" />
+                        <path d="M64.025,259.904L3.677,410.756c-10.472,26.337,2.389,56.177,28.726,66.65c5.963,2.371,12.319,3.603,18.736,3.631
+			c7.754,0,15.408-1.75,22.391-5.12l386.304-187c12.137-5.854,21.451-16.291,25.89-29.013H64.025z" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
 
+    <div class="modal-dialog">
+        <div class="modal-bg"></div>
+        <div class="modal">
+            <div class="modal__header">
+                <h3 class="modal__title">Товар добавлен в корзину</h3>
+                <span class="modal__close-btn">
+                    <svg height="365.696pt" viewBox="0 0 365.696 365.696" width="365.696pt"
+                        xmlns="http://www.w3.org/2000/svg" fill="#3b4256">
+                        <path
+                            d="m243.1875 182.859375 113.132812-113.132813c12.5-12.5 12.5-32.765624 0-45.246093l-15.082031-15.082031c-12.503906-12.503907-32.769531-12.503907-45.25 0l-113.128906 113.128906-113.132813-113.152344c-12.5-12.5-32.765624-12.5-45.246093 0l-15.105469 15.082031c-12.5 12.503907-12.5 32.769531 0 45.25l113.152344 113.152344-113.128906 113.128906c-12.503907 12.503907-12.503907 32.769531 0 45.25l15.082031 15.082031c12.5 12.5 32.765625 12.5 45.246093 0l113.132813-113.132812 113.128906 113.132812c12.503907 12.5 32.769531 12.5 45.25 0l15.082031-15.082031c12.5-12.503906 12.5-32.769531 0-45.25zm0 0" />
+                    </svg>
+                </span>
+            </div>
+            <div class="modal__content">
+                <img class="modal__img" src="images/icons/flower-frame.png" alt="Товар">
+                <div class="modal__descr">
+                    <p class="modal__name"></p>
+                    <p class="modal__price">
+                        Цена: <span></span> грн
+                    </p>
+                </div>
+            </div>
+            <div class="modal__nav">
+                <a class="modal__link" href="#">Перейти в корзину</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-modal">
+        <div class="modal-bg"></div>
+        <div class="cart">
+            <div class="cart__inner">
+                <p class="cart__title">Моя корзина</p>
+                <form class="cart__form">
+                    <table class="cart__table table">
+                        <thead class="table__header">
+                            <tr class="table__row">
+                                <th class="table__head-cell table__cell table__cell-img">
+                                    Фото товара
+                                </th>
+                                <th class="table__head-cell table__cell table__cell-name">
+                                    Товар
+                                </th>
+                                <th class="table__head-cell table__cell">
+                                    Цена, шт.
+                                </th>
+                                <th class="table__head-cell table__cell">
+                                    Количество
+                                </th>
+                                <th class="table__head-cell table__cell">
+                                    Сумма
+                                </th>
+                                <th class="table__head-cell table__cell">
+                                    Удалить
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="table__body">
+                        </tbody>
+                    </table>
+                    <div class="cart__total">
+                        <p class="cart__total-price">
+                            Сумма заказа: <span class="cart__total-num">0</span> <span
+                                class="cart__total-currency">грн</span>
+                        </p>
+                        <a class="cart__total-link" href="#">Оформить заказ</a>
+                    </div>
+                </form>
+            </div>
+            <a class="cart__close" href="#">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 340.8 340.8"
+                    style="enable-background:new 0 0 340.8 340.8;" xml:space="preserve" fill="#fd3068">
+                    <path d="M170.4,0C76.4,0,0,76.4,0,170.4s76.4,170.4,170.4,170.4s170.4-76.4,170.4-170.4S264.4,0,170.4,0z M170.4,323.6
+			c-84.4,0-153.2-68.8-153.2-153.2S86,17.2,170.4,17.2S323.6,86,323.6,170.4S254.8,323.6,170.4,323.6z" />
+                    <path d="M182.4,169.6l50-50c3.2-3.2,3.2-8.8,0-12c-3.2-3.2-8.8-3.2-12,0l-50,50l-50-50c-3.2-3.2-8.8-3.2-12,0
+			c-3.2,3.2-3.2,8.8,0,12l50,50l-50,49.6c-3.2,3.2-3.2,8.8,0,12c1.6,1.6,4,2.4,6,2.4s4.4-0.8,6-2.4l50-50l50,50c1.6,1.6,4,2.4,6,2.4
+			s4.4-0.8,6-2.4c3.2-3.2,3.2-8.8,0-12L182.4,169.6z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <script src="js/modal.js"></script>
     <script src="js/main.min.js"></script>
+
 </body>
 
 </html>

@@ -4,6 +4,8 @@
 @import 'global';
 @import 'libs';
 
+@import 'cart';
+
 
 /* .slider-filter {
     display: flex;
@@ -50,22 +52,29 @@
     &__top {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         padding: 15px 0 20px;
         background-color: #fff;
     }
-    
+    &__top-left {
+        max-width: 235px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     &__descr {
-        margin-top: 5px;
         font-size: 12px;
+        text-align: center;
     }
     &__top-right {
-        margin-left: 225px;
         display: flex;
         align-items: center;
     }
     &__text {
         @extend %merriweather-300;
         span {
+            display: block;
             @extend %merriweather-700;
         }
     }
@@ -158,16 +167,20 @@
 }
 
 .logo {
+    display: block;
+    max-width: 70px;
+    width: 100%;
     &__img {
-        width: 240px;
-        height: 40px;
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        border-radius: 50%;
     }
     
 }
 
 
 .product-box {
-    padding: 50px 0;
     &__content {
         margin-top: 50px;
         display: flex;
@@ -324,7 +337,6 @@
 }
 
 .product-card {
-    padding: 50px 0;
     position: relative;
     &::after {
         content: '';
@@ -990,7 +1002,6 @@
 }
 
 .product {
-    padding: 30px 0;
     &__inner {
         padding: 20px 0;
     }
@@ -1201,6 +1212,10 @@
     opacity: 1;
 }
 
+
+
+
+/* Styler for input */
 .jq-number {
     position: relative;
     padding: 0;
