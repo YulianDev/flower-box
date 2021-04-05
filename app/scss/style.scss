@@ -471,6 +471,7 @@
 .breadcrumbs {
     &__list {
         display: flex;
+        flex-wrap: wrap;
     }
     &__item {
         color: $link-color;
@@ -480,6 +481,8 @@
             content: '>';
             position: absolute;
             right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
         }
         &:last-child {
             padding-right: 0;
@@ -535,7 +538,7 @@
     }
     &__form-box {
         max-width: 510px;
-        height: 205px;
+        min-height: 205px;
         background-color: #f9f9f9;
         border-radius: 20px;
     }

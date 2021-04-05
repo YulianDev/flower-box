@@ -37,7 +37,7 @@ $(function () {
         focusOnSelect: true,
         draggable: false,
         arrows: false,
-
+        vertical: false,
     });
     $('.product-slide__big').slick({
         asNavFor: '.product-slide__thumb',
@@ -90,19 +90,33 @@ function initMap() {
   });
 }
 
+/* Filter btn on the flowers page  */
+const filterBtn = document.querySelector('.filter__btn');
+const filterList = document.querySelector('.filter__items');
+
+    if(filterBtn !== undefined) {
+        filterBtn.addEventListener('click', () => {
+            filterBtn.classList.toggle('active');
+            filterList.classList.toggle('active');
+        });
+    };
+
+
+
+
             /* Chat functionality */
-let chatTextarea = document.querySelector('.chat__textarea');
-let chatTextareaComputed = getComputedStyle(chatTextarea);
-let chatDefaultTextareaHeight = chatTextareaComputed.height;
-let chat = document.querySelector('.chat');
-let chatHeader = document.querySelector('.chat__header');
+const chatTextarea = document.querySelector('.chat__textarea');
+const chatTextareaComputed = getComputedStyle(chatTextarea);
+const chatDefaultTextareaHeight = chatTextareaComputed.height;
+const chat = document.querySelector('.chat');
+const chatHeader = document.querySelector('.chat__header');
 
 
 /* Show/hide chat */
 chat.addEventListener('click', (e) => {
-    let target = e.target;
-    let isHeader = target == chatHeader || chatHeader.contains(target);
-    let isCloseBtn = target == document.querySelector('.chat__close-btn');
+    const target = e.target;
+    const isHeader = target == chatHeader || chatHeader.contains(target);
+    const isCloseBtn = target == document.querySelector('.chat__close-btn');
     if(isHeader) {
         chat.classList.add('chat--active');
     
@@ -158,7 +172,7 @@ const body = document.querySelector('body');
 
 
 menuIcon.addEventListener('click', displayMenu);
-window.addEventListener('click', (e) => {inMenu(e)});
+window.addEventListener('click', inMenu);
 
 function displayMenu() {
     menuIcon.classList.toggle('active');
@@ -177,4 +191,7 @@ function inMenu(e) {
         displayMenu();
     }
 };
+
+
+
 
