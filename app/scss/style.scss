@@ -4,51 +4,10 @@
 @import 'global';
 @import 'libs';
 
-@import 'cart';
-
-
-/* .slider-filter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    &__btn {
-        @extend %merriweather-300;
-        color: $default;
-        border: none;
-        background-color:transparent;
-        padding-bottom: 5px;
-        cursor: pointer;
-        position: relative;
-        transition: all .2s;
-        &::before {
-            content: '';
-            display: block;
-            position: absolute;
-            height: 2px;
-            width: 0px;
-            background-color: $default;
-            bottom: 0;
-            left: 50%;
-            transition: all .5s;
-        }
-        &:hover {
-            font-weight: 700;
-            &::before {
-                width: 100%;
-                left: 0;
-                right: 0;
-            }
-        }
-    }
-
-    &__btn + .slider-filter__btn {
-        margin-left: 10px;
-    }
-} */
 
 .header {
     transition: all .5s;
+    background-color: #fff;
     &__top {
         display: flex;
         align-items: center;
@@ -127,13 +86,62 @@
             border-radius: 50%;
         }
     }
-    &-fixed {
-        & .menu {
-            position: fixed;
-            top: 0;
+    &-fixed .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+    &__menu-icon {
+        display: none;
+        z-index: 100;
+        position: relative;
+        cursor: pointer;
+        width: 30px;
+        height: 18px;
+        margin-right: 15px;
+        &::before,
+        &::after, 
+        & span {
             left: 0;
-            right: 0;
-            z-index: 999;
+            position: absolute;
+            height: 10%;
+            width: 100%;
+            transition: all .3s;
+            background-color: $default;
+        }
+        &::before,
+        &::after {
+            content: '';
+        }
+        &::before {
+            top: 0;
+        }
+        &::after {
+            bottom: 0;
+        }
+        & span {
+            top: 50%;
+            transform: scale(1) translateY(-50%);
+        }
+    } 
+    &__menu-icon.active {
+        &::before,
+        &::after, 
+        & span {
+            background-color: $accent;
+        }
+        span {
+            transform: scale(0);
+        }
+        &::before {
+            top: 50%;
+            transform: rotate(-45deg) translateY(-50%);
+        }
+        &::after {
+            bottom: 50%;
+            transform: rotate(45deg) translateY(50%);
         }
     }
 }
@@ -163,7 +171,7 @@
             background-color: #fff;
             color: #0f4a58;
         }
-    }
+    }    
 }
 
 .logo {
@@ -217,6 +225,7 @@
     overflow: hidden;
     border-radius: 10px;
     @extend %opensans-700;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     &__img-box {
         display: flex;
         justify-content: center;
@@ -654,7 +663,7 @@
 
 .social {
     display: flex;
-    height: 30px;
+    flex-wrap: wrap;
     &__text {
         margin-right: 10px;
     }
@@ -665,10 +674,9 @@
             height: 25px;
             opacity: .7;
             cursor: pointer;
-            transition: .5s;
+            transition: all .5s;
             &:hover {
-                width: 30px;
-                height: 30px;
+                transform: scale(1.1);
                 opacity: 1;
                 path {
                     fill: $accent;
@@ -690,7 +698,12 @@
     }
     &__messengers {
         display: flex;
-        height: 30px;
+        flex-wrap: wrap;
+
+        .contact__text {
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
     &__link {
         margin-left: 10px;
@@ -700,10 +713,9 @@
             height: 25px;
             opacity: .7;
             cursor: pointer;
-            transition: .5s;
+            transition: all .5s;
             &:hover {
-                width: 30px;
-                height: 30px;
+                transform: scale(1.1);
                 opacity: 1;
                 path {
                     fill: $accent;
@@ -713,6 +725,9 @@
     }
     .social__text {
         font-size: 18px;
+    }
+    &__descr {
+        padding-right: 15px;
     }
     &__location {
         padding: 30px 0;
@@ -779,6 +794,7 @@
         }
     }
     &__spin-img {
+        object-fit: cover;
         transition: all 1s;
     }
     &__spin {
@@ -1033,6 +1049,9 @@
         width: 100%;
         text-align: center;
     }
+    &__btn {
+        display: none;
+    }
 }
 
 .filter-price {
@@ -1114,7 +1133,8 @@
     &__nav,
     &__payment,
     &__contact {
-        width: 290px;
+        max-width: 290px;
+        width: 100%;
     }
     &__nav-item {
         margin-bottom: 10px;
@@ -1204,7 +1224,8 @@
 }
 
 #map {
-    width: 700px;
+    max-width: 700px;
+    width: 100%;
     height: 340px;
 }
 
