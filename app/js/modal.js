@@ -1,20 +1,20 @@
 
 
-let productBtnList = document.querySelectorAll('.product-item__link');
-let modalInfoWindow = document.querySelector('.modal-dialog');
-let modalInfoTab = document.querySelector('.modal')
-let modalInfoCloseBtn = document.querySelector('.modal__close-btn');
+const productBtnList = document.querySelectorAll('.product-item__link');
+const modalInfoWindow = document.querySelector('.modal-dialog');
+const modalInfoTab = document.querySelector('.modal')
+const modalInfoCloseBtn = document.querySelector('.modal__close-btn');
 
 
-let modalCartWindow = document.querySelector('.cart-modal');
-let modalCartTab = document.querySelector('.cart');
-let modalCartCloseBtn = document.querySelector
+const modalCartWindow = document.querySelector('.cart-modal');
+const modalCartTab = document.querySelector('.cart');
+const modalCartCloseBtn = document.querySelector
 ('.cart__close');
 
 
 
 
-let cartTotalPrice = document.querySelector('.cart__total-num');
+const cartTotalPrice = document.querySelector('.cart__total-num');
 
 
 
@@ -27,12 +27,11 @@ let product = {
 
 
 modalCartWindow.addEventListener('click', e => {
-    /* e.preventDefault(); */
+    e.preventDefault();
     let target = e.target;
 
-
-    deleteItem(target);
     closeModal(target, modalCartWindow, modalCartTab, modalCartCloseBtn);
+    deleteItem(target);
     changeInputCount(target);
 });
 
@@ -53,8 +52,9 @@ modalInfoWindow.addEventListener('click', e => {
 
 function closeModal(target, modalWindow, modalTab, closeBtn) {
 
-    let isModalTab = target == modalTab || modalTab.contains(target);
-    let isCloseBtn = target == closeBtn || closeBtn.contains(target);
+    const isModalTab = target == modalTab || modalTab.contains(target);
+    const isCloseBtn = target == closeBtn || closeBtn.contains(target);
+
 
     if(!isModalTab || isCloseBtn) {
         displayWindow(modalWindow);

@@ -3,6 +3,7 @@
 @import 'reset';
 @import 'global';
 @import 'libs';
+@import 'cart';
 
 
 .header {
@@ -1043,9 +1044,9 @@
     &__title {
         margin-bottom: 10px;
     }
-    &__inner {
+    &__items {
+        width: 100%;
         display: flex;
-        justify-content: space-between;
     }
     &__item {
         max-width: 250px;
