@@ -1,0 +1,125 @@
+.cart {
+    &__total {
+        text-align: end;
+        padding: 40px 60px 0;
+    }
+    &__total-price {
+        font-size: 20px;
+        margin-bottom: 30px;
+        span {
+            color: $accent;
+        }
+    }
+    &__total-currency {
+        font-size: 16px;
+    }
+    &__total-link {
+        display: inline-block;
+        padding: 10px 25px;
+        font-size: 18px;
+        color: $default;
+        border: 2px solid $default;
+        border-radius: 10px;
+        transition: all .5s;
+        &:hover {
+            color: $accent;
+            border-color: $accent;
+        }
+    }
+}
+
+.table {
+    width: 100%;
+    &__header {
+        background-color: #eceaea;
+    }
+    &__row {
+        display: flex;
+        padding: 15px 0;
+    }
+    &__cell {
+        width: 12%;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__cell-img {
+        width: 26%;
+    }
+    &__cell-name {
+        width: 26%;
+    }
+    &__img {
+        width: 130px;
+        height: 145px;
+        object-fit: cover;
+    }
+    &__name {
+        font-size: 18px;
+        @extend %merriweather-700;
+        padding-bottom: 10px;
+    }
+    &__input-box {
+        display: flex;
+        position: relative;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+    &__input-field {
+        width: 50px;
+        border: none;
+        text-align: center;
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            display: none;
+        }
+	    appearance: textfield;
+    }
+    &__input-minus, 
+    &__input-plus {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 20px;
+        top: 0;
+        bottom: 0;
+        cursor: pointer;
+    }
+    &__input-minus {
+        left: 0;
+    }
+    &__input-plus {
+        right: 0;
+    }
+    .table__row {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: #eceaea;
+        }
+    }
+    &__delete {
+        display: block;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        background-image: url('../images/icons/delete-icon.svg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: .6;
+        transition: opacity .6s;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

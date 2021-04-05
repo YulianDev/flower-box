@@ -5,6 +5,7 @@ const autoprefixer = require('gulp-autoprefixer'); // Добавляет пре�
 const uglify = require('gulp-uglify');  // Плагин для компресса js файлов, поскольку с scss используется встроенный компрессор
 const browserSync = require('browser-sync').create(); // Плагин для обновления окна браузера при изменении html/css
 const imagemin = require('gulp-imagemin'); // Работа с картинками и их конвертация
+const rename = require('gulp-rename');
 const del = require('del'); // Плагин для очистки (папки )
 
 
@@ -32,13 +33,30 @@ function styles() {
 }
 
 // Работа с скриптами
-function scripts() {
+function mainScript() {
     return src([
         'node_modules/jquery/dist/jquery.js',
+        'node_modules/rateyo/src/jquery.rateyo.js',
+        'node_modules/mixitup/dist/mixitup.min.js',
+        'node_modules/slick-carousel/slick/slick.js',
+        'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
+        'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
         'app/js/main.js',
     ])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
+    .pipe(dest('app/js'))
+    .pipe(browserSync.stream());
+}
+
+function otherScripts() {
+    return src([
+        'app/js/chat.js',
+        'app/js/flowers.js',
+        'app/js/modal.js',
+    ])
+    .pipe(uglify())
+    .pipe(rename({suffix: '.min'}))
     .pipe(dest('app/js'))
     .pipe(browserSync.stream());
 }
@@ -63,9 +81,10 @@ function images() {
 // Сборка
 function build() {
     return src([
+        'app/fonts/*',
         'app/**/*.html',
         'app/css/style.min.css',
-        'app/js/main.min.js'
+        'app/js/*.min.js'
     ], {base: 'app'})
     .pipe(dest('dist'));
 }
@@ -78,7 +97,10 @@ function cleanDist() {
 // Наблюдение за обновлениями
 function watching() {
     watch(['app/scss/**/*.scss'], styles);
-    watch(['app/js/main.js', '!app/js/main.min.js'], scripts);
+    watch(['app/js/main.js', '!app/js/main.min.js'], mainScript);
+    watch(['app/js/chat.js', '!app/js/chat.min.js'], otherScripts);
+    watch(['app/js/flower.js', '!app/js/flower.min.js'], otherScripts);
+    watch(['app/js/modal.js', '!app/js/modal.min.js'], otherScripts);
     watch(['app/**/*.html']).on('change', browserSync.reload);
 }
 
@@ -86,11 +108,12 @@ function watching() {
 
 
 exports.styles = styles;
-exports.scripts = scripts;
+exports.mainScript = mainScript;
+exports.otherScripts = otherScripts;
 exports.browserUpdate = browserUpdate;
 exports.watching = watching;
 exports.images = images;
 exports.cleanDist = cleanDist;
 exports.build = series(cleanDist, images, build);
 
-exports.default = parallel(styles, scripts, browserUpdate, watching); // Первые два прописаны просто на всякий случай, чтоб не обновлять страницу в ручную, когда мы прописали что-то новое
+exports.default = parallel(styles, mainScript, otherScripts, browserUpdate, watching); // Первые два прописаны просто на всякий случай, чтоб не обновлять страницу в ручную, когда мы прописали что-то новое
